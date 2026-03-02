@@ -23,7 +23,7 @@ namespace GanExtendDisplay
                     n.AddText("isGeneReqSlots".lang(__instance.slot.ToString() ?? ""), FontColor.Warning);
                 }
 
-                if (!__instance.CanRemove())
+                if (!__instance.CanRemove(null))
                 {
                     n.AddText("isPermaGene".lang(), FontColor.Warning);
                 }
